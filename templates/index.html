@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+            html, body {
+                text-align: center;
+                background-color: #B5C0D0;
+            }
+            .full {
+                padding-top: 70px;
+            }
+            .topic {
+                padding-top: 50px;
+            }
+            p {
+                padding-top: 50px;
+                font-size: 200%;
+            }
+        </style>
+        
+
+
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">News Aggregator</a>
+          </div>
+    </nav>
+
+
+ <div class="full">
+    <h1>Welcome to the News Aggregator Website</h1>
+    <form action="/news" method="POST" class="topic">
+        <label for="topic"><b>Choose Your Favourite District:</b></label>
+        <select name="topic" id="topic">
+            <option value="0">Select</option>
+            <option value="1">Thiruvananthapuram</option>
+            <option value="2">Kollam</option>
+            <option value="3">Pathanamthitta</option>
+            <option value="4">Alappuzha</option>
+            <option value="5">Kottayam</option>
+            <option value="6">Idukki</option>
+            <option value="7">Ernakulam</option>
+            <option value="8">Thrissur</option>
+            <option value="9">Palakkad</option>
+            <option value="10">Malappuram</option>
+            <option value="11">Kozhikode</option>
+            <option value="12">Wayanad</option>
+            <option value="13">Kannur</option>
+            <option value="14">Kasragod</option>
+        </select>
+        <br> <br><br><button type="submit" class="btn btn-dark">Get News</button>
+    </form>
+    <p> <b> Enjoy Your News 😊!!! </b></p>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
